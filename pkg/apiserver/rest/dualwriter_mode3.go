@@ -50,7 +50,7 @@ func (d *DualWriterMode3) Create(ctx context.Context, obj runtime.Object, create
 
 // Get overrides the behavior of the generic DualWriter and retrieves an object from Storage.
 func (d *DualWriterMode3) Get(ctx context.Context, name string, options *metav1.GetOptions) (runtime.Object, error) {
-	return d.Storage.Get(ctx, name, &metav1.GetOptions{})
+	return d.Storage.Get(ctx, name, options)
 }
 
 func (d *DualWriterMode3) Delete(ctx context.Context, name string, deleteValidation rest.ValidateObjectFunc, options *metav1.DeleteOptions) (runtime.Object, bool, error) {
