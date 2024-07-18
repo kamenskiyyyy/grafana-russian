@@ -7,6 +7,7 @@ import (
 	metainternalversion "k8s.io/apimachinery/pkg/apis/meta/internalversion"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
+	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/apiserver/pkg/registry/rest"
 	"k8s.io/klog/v2"
 )
@@ -17,6 +18,8 @@ type DualWriterMode3 struct {
 	*dualWriterMetrics
 	Log klog.Logger
 }
+
+const mode3Str = "3"
 
 // newDualWriterMode3 returns a new DualWriter in mode 3.
 // Mode 3 represents writing to LegacyStorage and Storage and reading from Storage.
@@ -129,6 +132,12 @@ func (d *DualWriterMode3) List(ctx context.Context, options *metainternalversion
 	//TODO: implement List
 	klog.Error("List not implemented")
 	return nil, nil
+}
+
+func (d *DualWriterMode3) Watch(ctx context.Context, options *metainternalversion.ListOptions) (watch.Interface, error) {
+	var method = "watch"
+	d.Log.WithValues("kind", options.Kind, "method", method, "mode", mode3Str).Info("starting to watch")
+	return d.Storage.Watch(ctx, options)
 }
 
 func (d *DualWriterMode3) Destroy() {
