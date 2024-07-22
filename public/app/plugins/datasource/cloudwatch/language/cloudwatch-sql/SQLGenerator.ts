@@ -21,7 +21,7 @@ export default class SQLGenerator {
     orderBy,
     orderByDirection,
     limit,
-  }: SQLExpression): string | undefined {
+  }: SQLExpression, accountId?: string): string | undefined {
     if (!from || !select?.name || !select?.parameters?.length) {
       return undefined;
     }
@@ -29,7 +29,8 @@ export default class SQLGenerator {
     let parts: string[] = [];
     this.appendSelect(select, parts);
     this.appendFrom(from, parts);
-    this.appendWhere(where, parts, true, where?.expressions?.length ?? 0);
+    this.appendAccountId(parts, accountId)
+    this.appendWhere(where, parts, true, where?.expressions?.length ?? 0, accountId);
     this.appendGroupBy(groupBy, parts);
     this.appendOrderBy(orderBy, orderByDirection, parts);
     this.appendLimit(limit, parts);
@@ -49,11 +50,19 @@ export default class SQLGenerator {
       : parts.push(this.formatValue(from?.property?.name ?? ''));
   }
 
+  private appendAccountId(parts: string[], accountId?: string) {
+    if (!accountId || accountId === "all") {
+      return;
+    }
+    parts.push(`WHERE AWS.AccountId = '${accountId}'`);
+  }
+
   private appendWhere(
     filter: QueryEditorExpression | undefined,
     parts: string[],
     isTopLevelExpression: boolean,
-    topLevelExpressionsCount: number
+    topLevelExpressionsCount: number,
+    accountId?: string
   ) {
     if (!filter) {
       return;
@@ -61,7 +70,11 @@ export default class SQLGenerator {
 
     const hasChildExpressions = 'expressions' in filter && filter.expressions.length > 0;
     if (isTopLevelExpression && hasChildExpressions) {
-      parts.push('WHERE');
+      if(accountId && accountId !== "all") {
+        parts.push('AND');
+      } else {
+        parts.push('WHERE');
+      }
     }
 
     if (filter.type === QueryEditorExpressionType.And) {
