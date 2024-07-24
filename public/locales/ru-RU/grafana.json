@@ -2116,7 +2116,7 @@
       "time-zone-selection": "Выбор часового пояса"
     },
     "range-content": {
-      "apply-button": "Применить временной интервал",
+      "apply-button": "Применить интервал",
       "default-error": "Пожалуйста, введите последнюю дату или «сейчас»",
       "fiscal-year": "Финансовый год",
       "from-input": "От",
