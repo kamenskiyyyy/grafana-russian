@@ -3,4 +3,4 @@
 
 Форк репозитория Grafana с добавлением русского языка 
 
-Предложил перевод https://ru.crowdin.com/project/grafana-russian-lang
+Предложить перевод https://ru.crowdin.com/project/grafana-russian-lang
