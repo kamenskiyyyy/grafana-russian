@@ -858,7 +858,7 @@
       "expand-all-rows": "Развернуть все строки",
       "go-to-dashboards": "Перейти к Дашбордам",
       "go-to-explore": "Перейти к исследованию",
-      "go-to-home-dashboard": "Перейти на домашний дашборд",
+      "go-to-home-dashboard": "Перейти на главную страницу",
       "go-to-profile": "Перейти в профиль",
       "make-time-range-permanent": "Сделать диапазон времени абсолютным/постоянным",
       "move-time-range-back": "Переместить диапазон времени назад",
@@ -1152,7 +1152,7 @@
       "title": "Активные уведомления"
     },
     "alerting-home": {
-      "title": "Домашний"
+      "title": "Главная"
     },
     "alerting-legacy": {
       "title": "Оповещение (устаревшее)"
@@ -1285,7 +1285,7 @@
     "help/keyboard-shortcuts": "Горячие клавиши",
     "help/support": "Поддержка",
     "home": {
-      "title": "Домашний"
+      "title": "Главная"
     },
     "incidents": {
       "title": "Инцидент"
@@ -2010,7 +2010,7 @@
   },
   "shared-preferences": {
     "fields": {
-      "home-dashboard-label": "Домашний Дашборд",
+      "home-dashboard-label": "Главный Дашборд",
       "home-dashboard-placeholder": "Дашборд по умолчанию",
       "locale-label": "Язык",
       "locale-placeholder": "Выберите язык",
