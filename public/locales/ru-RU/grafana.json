@@ -208,7 +208,7 @@
     "dashboards-tree": {
       "collapse-folder-button": "Свернуть папку {{title}}",
       "expand-folder-button": "Развернуть папку {{title}}",
-      "name-column": "Наименование",
+      "name-column": "Имя",
       "select-all-header-checkbox": "Выбрать все",
       "select-checkbox": "Выбрать",
       "tags-column": "Теги"
@@ -662,7 +662,7 @@
       "query-history": "История запросов",
       "query-library": "Библиотека запросов",
       "settings": "Настройки",
-      "starred": "Помеченные"
+      "starred": "Избранное"
     },
     "rich-history-card": {
       "add-comment-form": "Добавить форму комментария",
@@ -744,7 +744,7 @@
     "rich-history-utils": {
       "a-week-ago": "неделю назад",
       "days-ago": "{{num}} дней назад",
-      "default-from": "сейчас 1ч",
+      "default-from": "сейчас-1ч",
       "default-to": "сейчас",
       "today": "сегодня",
       "two-weeks-ago": "две недели назад",
@@ -757,7 +757,7 @@
     "run-query": {
       "left-pane": "Левая панель",
       "right-pane": "Правая панель",
-      "run-query-button": "Выполнить запрос",
+      "run-query-button": "Запустить",
       "switch-datasource-button": "Переключить источник данных и запустить запрос"
     },
     "secondary-actions": {
@@ -783,7 +783,7 @@
       "copy-shortened-link-abs-time": "Копировать абсолютный сокращенный URL",
       "copy-shortened-link-menu": "Открыть параметры ссылки на копию",
       "refresh-picker-cancel": "Отмена",
-      "refresh-picker-run": "Выполнить запрос",
+      "refresh-picker-run": "Запустить",
       "split-close": " Закрыть ",
       "split-close-tooltip": "Закрыть разделенную панель",
       "split-narrow": "Узкая панель",
@@ -940,7 +940,7 @@
       "copy-to-clipboard": "Ссылка скопирована в буфер обмена",
       "short-url-label": "Сократить ссылку",
       "time-range-description": "Изменить текущий относительный диапазон времени на абсолютный диапазон времени",
-      "time-range-label": "Период блокировки"
+      "time-range-label": "Блокировать временной диапазон"
     }
   },
   "login": {
@@ -972,7 +972,7 @@
   "migrate-to-cloud": {
     "build-snapshot": {
       "description": "Этот инструмент может перенести ресурсы из этой установки в облачный стек. Чтобы начать, вам нужно создать снимок этой установки. Создание снимка обычно занимает менее двух минут. Снимки хранятся наряду с этой установкой Grafana.",
-      "title": "Ничего не существует",
+      "title": "Не существует снимка",
       "when-complete": "Как только снимок будет завершен, вы сможете загрузить его в ваше облако."
     },
     "building-snapshot": {
@@ -1405,7 +1405,7 @@
       "title": "Снимки"
     },
     "starred": {
-      "title": "Помеченные"
+      "title": "Избранное"
     },
     "starred-empty": {
       "title": "Ваши избранные дашборды появятся здесь"
@@ -1506,8 +1506,8 @@
       "interval-label": "Интервал",
       "interval-placeholder": "5 м",
       "interval-required": "Требуется интервал",
-      "name-label": "Наименование",
-      "name-placeholder": "Наименование",
+      "name-label": "Имя",
+      "name-placeholder": "Имя",
       "name-required": "Требуется имя",
       "save": "Сохранить",
       "table-delete": "Удалить плейлист",
@@ -1617,7 +1617,7 @@
       "invite-field-desc": "Пригласить людей по электронной почте",
       "invite-field-label": "Пригласить",
       "learn-more-button": "Узнать больше",
-      "recipient-email-placeholder": "Почта",
+      "recipient-email-placeholder": "Электронная почта",
       "recipient-invalid-email-text": "Invalid email",
       "recipient-invitation-button": "Пригласить",
       "recipient-invitation-description": "Пригласить кого-нибудь по электронной почте",
@@ -1735,7 +1735,7 @@
     "table-header": {
       "activated-label": "Активирован",
       "activated-tooltip": "Раньше пользователь был активным пользователем на дашборде",
-      "email-label": "Почта",
+      "email-label": "Электронная почта",
       "last-active-label": "Последняя активность",
       "origin-label": "Источник",
       "role-label": "Роль"
@@ -1855,7 +1855,7 @@
       "include-panels": "Включить панели",
       "remove-datasource-filter": "Источник данных: {{datasource}}",
       "sort-placeholder": "Сортировка",
-      "starred": "Помеченные",
+      "starred": "Избранное",
       "view-as-folders": "Просмотр по папкам",
       "view-as-list": "Показать как список"
     },
@@ -1870,7 +1870,7 @@
       "deleted-less-than-1-min": "< 1 min",
       "deleted-remaining-header": "Осталось времени",
       "location-header": "Местоположение",
-      "name-header": "Наименование",
+      "name-header": "Название",
       "tags-header": "Теги",
       "type-dashboard": "Дашборд",
       "type-folder": "Папка",
@@ -1922,7 +1922,7 @@
       "cancel-button": "Отмена",
       "info-text": "Экспортировать этот дашборд.",
       "save-button": "Сохранить в файл",
-      "share-externally-label": "Экспорт для обмена за границей",
+      "share-externally-label": "Экспорт для внешнего доступа",
       "view-button": "Просмотр JSON"
     },
     "library": {
@@ -1939,7 +1939,7 @@
       "save-dashboard": "Чтобы отобразить изображение панели, вы должны сначала сохранить этот дашборд.",
       "shorten-url": "Сократить URL",
       "time-range-description": "Преобразует текущий относительный диапазон времени в абсолютный интервал",
-      "time-range-label": "Период блокировки"
+      "time-range-label": "Блокировать временной диапазон"
     },
     "panel": {
       "title": "Поделиться панелью"
@@ -1955,7 +1955,7 @@
       "expire-never": "Никогда",
       "expire-week": "1 неделя",
       "info-text-1": "Снимки — это мгновенный способ публичного распространения интерактивного дашборд публично. При создании мы удаляем чувствительные данные, такие как запросы (метрика, шаблон и аннотация) и ссылки панелей, оставляя только видимые имена метрических данных и серии, встроенные в ваш дашборд.",
-      "info-text-2": "Помните, что ваш снимок <1>может быть просмотрен всеми</1>, который имеет ссылку и может получить доступ к URL. Поделитесь мудро.",
+      "info-text-2": "Помните, что ваш снимок <1>может быть просмотрен всеми</1>, который имеет ссылку и может получить доступ к URL. Делайте это разумно.",
       "local-button": "Опубликовать снимок",
       "mistake-message": "Вы ошиблись? ",
       "name": "Имя снимка",
@@ -2005,12 +2005,12 @@
   },
   "shared-dashboard": {
     "fields": {
-      "timezone-label": "Timezone"
+      "timezone-label": "Часовой пояс"
     }
   },
   "shared-preferences": {
     "fields": {
-      "home-dashboard-label": "Главный Дашборд",
+      "home-dashboard-label": "Домашняя страница",
       "home-dashboard-placeholder": "Дашборд по умолчанию",
       "locale-label": "Язык",
       "locale-placeholder": "Выберите язык",
@@ -2049,7 +2049,7 @@
       "more-info": "Вы можете создать снимок любого дашборда через окно <1>Поделиться</1>. <4>Подробнее</4>"
     },
     "external-badge": "Внешний",
-    "name-column-header": "Наименование",
+    "name-column-header": "Название",
     "share": {
       "cancel-button": "Отмена",
       "copy-link-button": "Копировать ссылку",
@@ -2154,7 +2154,7 @@
   "Unknown": "Неизвестен",
   "user-orgs": {
     "current-org-button": "Текущее",
-    "name-column": "Наименование",
+    "name-column": "Название",
     "role-column": "Роль",
     "select-org-button": "Выберите организацию",
     "title": "Организации"
@@ -2162,9 +2162,9 @@
   "user-profile": {
     "fields": {
       "email-error": "Требуется адрес электронной почты",
-      "email-label": "Почта",
+      "email-label": "Электронная почта",
       "name-error": "Требуется имя",
-      "name-label": "Наименование",
+      "name-label": "Имя",
       "username-label": "Имя пользователя"
     },
     "tabs": {
