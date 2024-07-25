@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - '*release-11.1.0*'
+      - 'release-11.1.0'
 
 jobs:
   docker:
