@@ -1082,8 +1082,8 @@
       "confirm-text": "Удалить"
     },
     "empty": {
-      "button": "Create Playlist",
-      "pro-tip": "You can use playlists to cycle dashboards on TVs without user control",
+      "button": "Создать плейлист",
+      "pro-tip": "Вы можете использовать плейлисты для переключения панели инструментов на ТВ без управления пользователем",
       "pro-tip-link-title": "Узнать больше",
       "title": "Плейлисты еще не созданы"
     }
@@ -1222,7 +1222,7 @@
     "header": {
       "collapse-row": "Свернуть строку запроса",
       "datasource-help": "Справка по источнику данных",
-      "disable-query": "Disable query",
+      "disable-query": "Отключить запрос",
       "drag-and-drop": "Перетащите для изменения порядка",
       "duplicate-query": "Повторяющийся запрос",
       "expand-row": "Развернуть строку запросов",
@@ -1316,7 +1316,7 @@
       "info-text": "Создайте прямую ссылку на этот дашборд или панель, настроенную с параметрами ниже.",
       "link-url": "URL ссылки",
       "render-alert": "Модуль визуализации изображений не установлен",
-      "render-instructions": "To render a panel image, you must install the <1>Grafana image renderer plugin</1>. Please contact your Grafana administrator to install the plugin.",
+      "render-instructions": "Для отображения панели необходимо установить плагин <1>Grafana image renderer plugin</1>. Пожалуйста, свяжитесь с администратором Grafana, чтобы установить плагин.",
       "rendered-image": "Изображение прямой ссылки",
       "save-alert": "Дашборд не сохранен",
       "save-dashboard": "Чтобы отобразить изображение панели, вы должны сначала сохранить этот дашборд.",
@@ -1336,10 +1336,10 @@
       "expire-day": "1 день",
       "expire-hour": "1 час",
       "expire-never": "Никогда",
-      "expire-week": "7 Days",
+      "expire-week": "7 дней",
       "info-text-1": "Снимки — это мгновенный способ публичного распространения интерактивного дашборд публично. При создании мы удаляем чувствительные данные, такие как запросы (метрика, шаблон и аннотация) и ссылки панелей, оставляя только видимые имена метрических данных и серии, встроенные в ваш дашборд.",
       "info-text-2": "Помните, что ваш снимок <1>может быть просмотрен всеми</1>, который имеет ссылку и может получить доступ к URL. Делайте это разумно.",
-      "local-button": "Local Snapshot",
+      "local-button": "Локальный снимок",
       "mistake-message": "Вы ошиблись? ",
       "name": "Имя снимка",
       "timeout": "Таймаут (в секундах)",
