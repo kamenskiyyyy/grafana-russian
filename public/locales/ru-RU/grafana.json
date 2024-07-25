@@ -1,5 +1,5 @@
 {
-  "_comment": "This file is the source of truth for English strings. Edit this in the codebase to change plurals and other phrases for the UI.",
+  "_comment": "This file is the source of truth for Russian strings.",
   "access-control": {
     "add-permission": {
       "role-label": "Роль",
@@ -31,7 +31,7 @@
   "browse-dashboards": {
     "action": {
       "cancel-button": "Отмена",
-      "cannot-move-folders": "Folders can not be moved",
+      "cannot-move-folders": "Папки нельзя переместить",
       "delete-button": "Удалить",
       "delete-modal-invalid-text": "Одна или несколько папок содержат панели библиотек или правила предупреждения. Сначала удалите их, чтобы продолжить.",
       "delete-modal-invalid-title": "Невозможно удалить папку",
@@ -94,7 +94,7 @@
     },
     "no-results": {
       "clear": "Очистить поиск и фильтры",
-      "text": "No results found for your query."
+      "text": "По вашему запросу ничего не найдено."
     }
   },
   "clipboard-button": {
@@ -244,14 +244,14 @@
     "empty": {
       "add-library-panel-body": "Добавить визуализации, которые используются совместно с дашбордами.",
       "add-library-panel-button": "Добавить панель библиотеки",
-      "add-library-panel-header": "Add a library panel",
+      "add-library-panel-header": "Добавить панель библиотеки",
       "add-visualization-body": "Выберите источник данных, а затем запросите и визуализируйте ваши данные с помощью графиков, статистики и таблиц или создайте списки, markdowns и другие виджеты.",
       "add-visualization-button": "Добавить визуализацию",
       "add-visualization-header": "Начните ваш новый дашборд, добавив визуализацию",
       "add-widget-body": "Создавать списки, разметки и другие виджеты",
       "add-widget-button": "Добавить виджет",
       "add-widget-header": "Добавить виджет",
-      "import-a-dashboard-body": "Import dashboard from file or <1>grafana.com</1>.",
+      "import-a-dashboard-body": "Импорт панели инструментов из файла или <1>grafana.com</1>.",
       "import-a-dashboard-header": "Импортировать дашборд",
       "import-dashboard-button": "Импорт дашборда"
     },
@@ -353,9 +353,9 @@
     "annotations": {
       "title": "Аннотации"
     },
-    "dashboard-delete-button": "Delete Dashboard",
+    "dashboard-delete-button": "Удалить панель",
     "general": {
-      "auto-refresh-description": "Define the auto refresh intervals that should be available in the auto refresh list.",
+      "auto-refresh-description": "Определите интервалы автообновления, которые должны быть доступны в списке автообновления.",
       "auto-refresh-label": "Автообновление",
       "description-label": "Описание",
       "editable-description": "Установите в режиме \"только для чтения\", чтобы отключить все редактирования. Перезагрузите дашборд, чтобы изменения вступили в силу",
@@ -369,7 +369,7 @@
       "title-label": "Заголовок"
     },
     "json-editor": {
-      "apply-button": "Apply changes",
+      "apply-button": "Применить изменения",
       "save-button": "Сохранить изменения",
       "subtitle": "Модель JSON ниже - это структура данных, которая определяет дашборд. Она включает в себя настройки дашборда, настройки панели, макета, запросы и так далее.",
       "title": "Модель JSON"
@@ -546,7 +546,7 @@
       "copy-links-normal-category": "Обычный URL ссылки",
       "copy-shortened-link": "Копировать сокращенный URL",
       "copy-shortened-link-abs-time": "Копировать абсолютный сокращенный URL",
-      "copy-shortened-link-menu": "Open shortened link menu",
+      "copy-shortened-link-menu": "Открыть сокращенное меню ссылок",
       "refresh-picker-cancel": "Отмена",
       "refresh-picker-run": "Запустить",
       "split-close": "Закрыть",
@@ -588,9 +588,9 @@
   "help-modal": {
     "shortcuts-category": {
       "dashboard": "Дашборд",
-      "focused-panel": "Focused Panel",
+      "focused-panel": "Фокусная панель",
       "global": "Глобально",
-      "time-range": "Time Range"
+      "time-range": "Диапазон времени"
     },
     "shortcuts-description": {
       "change-theme": "Сменить тему",
@@ -654,7 +654,7 @@
     "modal": {
       "body_one": "Эта панель используется в {{count}} дашбордах. Пожалуйста, выберите дашборд для просмотра в следующих случаях:",
       "body_other": "Эта панель используется на панели {{count}} . Пожалуйста, выберите приборную панель для просмотра панели в:",
-      "button-cancel": "<0>Cancel</0>",
+      "button-cancel": "<0>Отмена</0>",
       "button-view-panel1": "Открыть панель в {{label}}...",
       "button-view-panel2": "Показать панель на дашборде...",
       "panel-not-linked": "Панель не связана с дашбордом. Добавьте панель в дашборд и повторите попытку.",
@@ -707,7 +707,7 @@
       "title": "Оповещения"
     },
     "alerting-admin": {
-      "title": "Admin"
+      "title": "Админ"
     },
     "alerting-am-routes": {
       "subtitle": "Определите, как оповещения направляются в контактные точки",
@@ -793,7 +793,7 @@
       "title": "Создать"
     },
     "create-alert": {
-      "title": "Create alert rule"
+      "title": "Создать правило оповещения"
     },
     "create-dashboard": {
       "title": "Дашборд"
@@ -877,7 +877,7 @@
       "subtitle": "Управление дашбордами папки и разрешениями"
     },
     "monitoring": {
-      "subtitle": "Monitoring and infrastructure apps",
+      "subtitle": "Приложения мониторинга и инфраструктуры",
       "title": "Наблюдение"
     },
     "new": {
@@ -1082,8 +1082,8 @@
       "confirm-text": "Удалить"
     },
     "empty": {
-      "button": "Create Playlist",
-      "pro-tip": "You can use playlists to cycle dashboards on TVs without user control",
+      "button": "Создать плейлист",
+      "pro-tip": "Вы можете использовать плейлисты для переключения панели инструментов на ТВ без управления пользователем",
       "pro-tip-link-title": "Узнать больше",
       "title": "Плейлисты еще не созданы"
     }
@@ -1222,7 +1222,7 @@
     "header": {
       "collapse-row": "Свернуть строку запроса",
       "datasource-help": "Справка по источнику данных",
-      "disable-query": "Disable query",
+      "disable-query": "Отключить запрос",
       "drag-and-drop": "Перетащите для изменения порядка",
       "duplicate-query": "Повторяющийся запрос",
       "expand-row": "Развернуть строку запросов",
@@ -1316,7 +1316,7 @@
       "info-text": "Создайте прямую ссылку на этот дашборд или панель, настроенную с параметрами ниже.",
       "link-url": "URL ссылки",
       "render-alert": "Модуль визуализации изображений не установлен",
-      "render-instructions": "To render a panel image, you must install the <1>Grafana image renderer plugin</1>. Please contact your Grafana administrator to install the plugin.",
+      "render-instructions": "Для отображения панели необходимо установить плагин <1>Grafana image renderer plugin</1>. Пожалуйста, свяжитесь с администратором Grafana, чтобы установить плагин.",
       "rendered-image": "Изображение прямой ссылки",
       "save-alert": "Дашборд не сохранен",
       "save-dashboard": "Чтобы отобразить изображение панели, вы должны сначала сохранить этот дашборд.",
@@ -1336,10 +1336,10 @@
       "expire-day": "1 день",
       "expire-hour": "1 час",
       "expire-never": "Никогда",
-      "expire-week": "7 Days",
+      "expire-week": "7 дней",
       "info-text-1": "Снимки — это мгновенный способ публичного распространения интерактивного дашборд публично. При создании мы удаляем чувствительные данные, такие как запросы (метрика, шаблон и аннотация) и ссылки панелей, оставляя только видимые имена метрических данных и серии, встроенные в ваш дашборд.",
       "info-text-2": "Помните, что ваш снимок <1>может быть просмотрен всеми</1>, который имеет ссылку и может получить доступ к URL. Делайте это разумно.",
-      "local-button": "Local Snapshot",
+      "local-button": "Локальный снимок",
       "mistake-message": "Вы ошиблись? ",
       "name": "Имя снимка",
       "timeout": "Таймаут (в секундах)",
