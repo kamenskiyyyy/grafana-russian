@@ -22,4 +22,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: kamenskiyyyy/grafana-russian:latest,kamenskiyyyy/grafana-russian:main-${{ github.sha }}
+          tags: kamenskiyyyy/grafana-russian:latest,kamenskiyyyy/grafana-russian:11.2.0-pre
