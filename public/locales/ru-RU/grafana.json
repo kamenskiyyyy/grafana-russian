@@ -742,7 +742,7 @@
     },
     "modal": {
       "body_one": "Эта панель используется в {{count}} дашбордах. Пожалуйста, выберите дашборд для просмотра в следующих случаях:",
-      "body_other": "This panel is being used in {{count}} dashboards. Please choose which dashboard to view the panel in:",
+      "body_other": "Эта панель используется на панели {{count}} . Пожалуйста, выберите приборную панель для просмотра панели в:",
       "button-cancel": "Отмена",
       "button-view-panel1": "Открыть панель в {{label}}...",
       "button-view-panel2": "Показать панель на дашборде...",
@@ -826,7 +826,7 @@
       "step-3": "Вам будет предложено ввести токен миграции. Сгенерировать его с этого экрана.",
       "step-4": "В вашем самоуправляемом экземпляре выберите \"Загрузить все\" для загрузки источников данных и дашбордов в этот облачный стек.",
       "step-5": "Если некоторые из ваших источников данных не будут работать через публичный интернет, вам нужно установить Приватный Источник Данных Подключения в вашей самоуправляемой среде.",
-      "title": "How to get started"
+      "title": "Как начать работу"
     },
     "is-it-secure": {
       "body": "Grafana Labs обязуется поддерживать самые высокие стандарты конфиденциальности и безопасности данных. Реализовав стандартные технологии и процедуры безопасности, мы помогаем защитить данные наших клиентов от несанкционированного доступа, использования или раскрытия информации.",
@@ -834,12 +834,12 @@
       "title": "Является ли это безопасным?"
     },
     "migrate-to-this-stack": {
-      "body": "Some configuration from your self-managed Grafana instance can be automatically copied to this cloud stack.",
+      "body": "Некоторые настройки вашего экземпляра Grafana могут быть автоматически скопированы в это облако.",
       "link-title": "Посмотреть полное руководство по миграции",
-      "title": "Migrate configuration to this stack"
+      "title": "Перенести конфигурацию в этот стек"
     },
     "migration-token": {
-      "body": "Your self-managed Grafana instance will require a special authentication token to securely connect to this cloud stack.",
+      "body": "Экземпляр вашего самоуправляемого Grafana потребует специального токена аутентификации для безопасного подключения к этому стеку.",
       "delete-modal-body": "Если вы уже использовали этот токен при самоуправляемой установке, то эта установка больше не сможет загружать контент.",
       "delete-modal-cancel": "Отмена",
       "delete-modal-confirm": "Удалить",
@@ -855,7 +855,7 @@
       "modal-field-description": "Скопируйте токен сейчас, так как вы не сможете увидеть его снова. Потеря токена требует создания нового.",
       "modal-field-label": "Токен",
       "modal-title": "Токен миграции создан",
-      "status": "Current status: <1></1>",
+      "status": "Текущий статус: <1></1>",
       "title": "Токен миграции"
     },
     "pdc": {
@@ -892,7 +892,7 @@
       "disconnect-error-title": "Произошла ошибка при отключении",
       "run-migration-error-description": "Смотрите журналы сервера Grafana для получения более подробной информации",
       "run-migration-error-title": "Произошла ошибка при миграции ваших ресурсов",
-      "start-migration": "Upload everything",
+      "start-migration": "Загрузить всё",
       "target-stack-title": "Загрузка в"
     },
     "token-status": {
@@ -937,8 +937,8 @@
       "title": "Каналы уведомлений"
     },
     "alerting-groups": {
-      "subtitle": "See grouped alerts from an Alertmanager instance",
-      "title": "Groups"
+      "subtitle": "Смотрите сгруппированные оповещения от экземпляра Alertmanager",
+      "title": "Группы"
     },
     "alerting-home": {
       "title": "Главная"
@@ -1071,7 +1071,7 @@
       "title": "Главная"
     },
     "incidents": {
-      "title": "Incidents"
+      "title": "Инциденты"
     },
     "infrastructure": {
       "subtitle": "Понимайте здоровье вашей инфраструктуры",
@@ -1152,7 +1152,7 @@
     },
     "recentlyDeleted": {
       "subtitle": "Любые элементы, перечисленные здесь более 30 дней, будут автоматически удалены.",
-      "title": "Recently Deleted"
+      "title": "Недавно удаленные"
     },
     "recorded-queries": {
       "title": "Записанные запросы"
@@ -1519,7 +1519,7 @@
       "title": "Выберите области действия"
     },
     "basicSelector": {
-      "openAdvanced": "Open advanced scope selector <1></1>",
+      "openAdvanced": "Открыть расширенный селектор области <1></1>",
       "placeholder": "Выберите область...",
       "removeAll": "Удалить все области действия"
     },
@@ -1529,12 +1529,12 @@
     },
     "suggestedDashboards": {
       "loading": "Загрузка дашбордов",
-      "search": "Filter"
+      "search": "Фильтр"
     },
     "tree": {
       "collapse": "Свернуть",
       "expand": "Развернуть",
-      "search": "Filter"
+      "search": "Фильтр"
     }
   },
   "search": {
