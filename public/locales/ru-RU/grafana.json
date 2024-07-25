@@ -13,7 +13,7 @@
       "save": "Сохранить"
     },
     "permission-list": {
-      "permission": "Разрешение"
+      "permission": "Права доступа"
     },
     "permissions": {
       "add-label": "Добавить разрешение",
@@ -1481,7 +1481,7 @@
       "explore": "Песочница",
       "get-help": "Получить помощь",
       "hide-legend": "Скрыть легенду",
-      "inspect": "Инспекция",
+      "inspect": "Панель разработчика",
       "inspect-data": "Данные",
       "inspect-json": "JSON панели",
       "more": "Еще...",
