@@ -1,6 +1,5 @@
 {
   "_comment": "Это источник достоверности для русских фраз, которые должны быть обновлены непосредственно в компонентах, и дополнительных множественных чисел, указанных в этом файле.",
-  "{unit}": "{unit}",
   "access-control": {
     "add-permission": {
       "role-label": "Роль",
@@ -99,6 +98,15 @@
         "title": "Не удается отобразить все события"
       }
     },
+    "common": {
+      "cancel": "Отмена",
+      "delete": "Удалить",
+      "edit": "Редактирование",
+      "export": "Экспорт",
+      "export-all": "Экспортировать все",
+      "view": "Вид"
+    },
+    "contact-point": "Контактная точка",
     "contact-points": {
       "delivery-duration": "Последняя доставка доставлена <1></1>",
       "last-delivery-attempt": "Последняя попытка доставки",
@@ -112,8 +120,43 @@
       "used-by_one": "Используется политикой оповещений {{ count }}",
       "used-by_other": "Используется политикой оповещений {{ count }}"
     },
+    "contactPointFilter": {
+      "label": "Контактная точка"
+    },
+    "grafana-rules": {
+      "export-rules": "Экспортировать правила",
+      "loading": "Загрузка...",
+      "new-recording-rule": "Новое правило записи",
+      "title": "Графана"
+    },
+    "mute_timings": {
+      "error-loading": {
+        "description": "Не удалось загрузить тайминг. Пожалуйста, повторите попытку позже.",
+        "title": "Ошибка загрузки таймингов"
+      }
+    },
+    "mute-timings": {
+      "save": "Сохранить тайминг",
+      "saving": "Сохранение времени отключения"
+    },
     "policies": {
+      "default-policy": {
+        "description": "Все экземпляры оповещений будут обрабатываться политикой по умолчанию, если другие соответствующие политики не найдены.",
+        "title": "Политика по умолчанию"
+      },
+      "generated-policies": "Автоматически сгенерированные политики",
       "metadata": {
+        "active-time": "Активно, когда",
+        "delivered-to": "Доставлено",
+        "grouped-by": "Сгруппировано по",
+        "grouping": {
+          "none": "Не группируется",
+          "single-group": "Одиночная группа"
+        },
+        "inherited": "Унаследовано",
+        "mute-time": "Заглушено, когда",
+        "n-instances_one": "экземпляр",
+        "n-instances_other": "экземпляры",
         "timingOptions": {
           "groupInterval": {
             "description": "Как долго ждать перед отправкой уведомления о новых оповещениях, добавленных в группу оповещений, для которых уже было отправлено первоначальное уведомление.",
@@ -128,7 +171,16 @@
             "label": "Повторяется каждый <1></1>"
           }
         }
-      }
+      },
+      "n-more-policies_one": "Дополнительная политика {{count}}",
+      "n-more-policies_other": "Дополнительные политики {{count}}",
+      "new-child": "Новая политика в отношении детей",
+      "new-policy": "Добавить новую политику",
+      "no-matchers": "Нет совпадений"
+    },
+    "provisioning": {
+      "badge-tooltip-provenance": "Этот ресурс был предоставлен через {{provenance}} и не может быть отредактирован через пользовательский интерфейс",
+      "badge-tooltip-standard": "Этот ресурс был предоставлен и не может быть отредактирован через пользовательский интерфейс"
     },
     "rule-groups": {
       "delete": {
@@ -144,7 +196,16 @@
         "success": "Группа правил успешно обновлена"
       }
     },
+    "rule-state": {
+      "creating": "Создание",
+      "deleting": "Удаление",
+      "paused": "Пауза",
+      "recording-rule": "Правило записи"
+    },
     "rules": {
+      "add-rule": {
+        "success": "Правило успешно добавлено"
+      },
       "delete-rule": {
         "success": "Правило успешно удалено"
       },
@@ -153,6 +214,9 @@
       },
       "resume-rule": {
         "success": "Возобновлена оценка правил"
+      },
+      "update-rule": {
+        "success": "Правило успешно обновлено"
       }
     }
   },
@@ -260,6 +324,11 @@
       "success": "Скопировано"
     }
   },
+  "combobox": {
+    "clear": {
+      "title": "Очистить значение"
+    }
+  },
   "command-palette": {
     "action": {
       "change-theme": "Изменить тему...",
@@ -282,15 +351,19 @@
     }
   },
   "common": {
+    "cancel": "Отмена",
     "locale": {
       "default": "По умолчанию"
     },
     "save": "Сохранить"
   },
+  "complete": "complete",
   "connections": {
     "connect-data": {
       "category-header-label": "Источники данных",
-      "empty-message": "Не найдено результатов, соответствующих запросу"
+      "empty-message": "Не найдено результатов, соответствующих запросу",
+      "request-data-source": "Запросить новый источник данных",
+      "roadmap": "Просмотр дорожной карты"
     },
     "search": {
       "placeholder": "Искать все"
@@ -628,19 +701,14 @@
       "message": "Источников данных не найдено"
     }
   },
-  "Description": "Описание",
+  "embed": {
+    "share": {
+      "time-range-description": "Изменить текущий относительный диапазон времени на абсолютный диапазон времени",
+      "time-range-label": "Период блокировки"
+    }
+  },
   "explore": {
     "add-to-dashboard": "Добавить в дашборд",
-    "add-to-library-modal": {
-      "auto-star": "Авто-звёздочка этого запроса для добавления его в избранный список в Библиотеке запросов.",
-      "data-source-name": "Имя источника данных",
-      "data-source-type": "Тип источника данных",
-      "description": "Описание",
-      "info": "Вы собираетесь сохранить этот запрос. После сохранения вы можете легко получить доступ к нему на вкладке \"Библиотека запросов\" для дальнейшего использования и ссылки.",
-      "query": "Запрос",
-      "title": "Добавить запрос в библиотеку запросов",
-      "visibility": "Видимость"
-    },
     "logs": {
       "maximum-pinned-logs": "Достигнуто максимальное количество прикрепленных журналов {{PINNED_LOGS_LIMIT}} . Отпишите журнал, чтобы добавить другой.",
       "no-logs-found": "Журналы не найдены.",
@@ -648,10 +716,34 @@
       "stop-scan": "Остановить сканирование"
     },
     "query-library": {
+      "add-edit-description": "Добавить/изменить описание",
+      "cancel": "Отмена",
+      "default-description": "Публичный",
       "delete-query": "Удалить запрос",
       "delete-query-text": "Вы собираетесь удалить этот запрос из библиотеки запросов. Это действие нельзя отменить. Вы хотите продолжить?",
       "delete-query-title": "Удалить запрос",
-      "query-deleted": "Запрос удален"
+      "private": "Приватный",
+      "public": "Публичный",
+      "query-deleted": "Запрос удален",
+      "query-template-add-error": "Ошибка при попытке добавить этот запрос в библиотеку",
+      "query-template-added": "Шаблон запроса успешно добавлен в библиотеку",
+      "query-template-edit-error": "Ошибка при попытке изменить этот запрос",
+      "query-template-edited": "Шаблон запроса отредактирован",
+      "save": "Сохранить"
+    },
+    "query-template-modal": {
+      "add-info": "Вы собираетесь сохранить этот запрос. После сохранения вы можете легко получить доступ к нему на вкладке \"Библиотека запросов\" для дальнейшего использования и ссылки.",
+      "add-title": "Добавить запрос в библиотеку запросов",
+      "auto-star": "Авто-звёздочка этого запроса для добавления его в избранный список в Библиотеке запросов.",
+      "data-source-name": "Имя источника данных",
+      "description": "Описание",
+      "edit-info": "Вы собираетесь изменить этот запрос. После сохранения вы можете легко получить доступ к нему на вкладке Библиотека запросов для использования в будущем.",
+      "edit-title": "Изменить запрос",
+      "query": "Запрос",
+      "visibility": "Видимость"
+    },
+    "query-template-modall": {
+      "data-source-type": "Тип источника данных"
     },
     "rich-history": {
       "close-tooltip": "Закрыть историю запросов",
@@ -682,7 +774,6 @@
       "edit-comment-tooltip": "Редактировать комментарий",
       "optional-description": "Необязательное описание того, что делает запрос.",
       "query-comment-label": "Запрос комментария",
-      "query-template-added": "Шаблон запроса успешно добавлен в библиотеку",
       "query-text-label": "Текст запроса",
       "save-comment": "Сохранить комментарий",
       "star-query-tooltip": "Звездный запрос",
@@ -893,7 +984,139 @@
       "refresh": "Обновить"
     }
   },
-  "Labels": "Метки",
+  "ldap-drawer": {
+    "attributes-section": {
+      "description": "Укажите атрибуты LDAP, которые сопоставляются с именем пользователя&lsquo;с данным именем, фамилией, и адрес электронной почты, гарантируя, что приложение корректно извлекает и отображает информацию о пользователе.",
+      "email": {
+        "label": "Почта"
+      },
+      "label": "Атрибуты",
+      "member-of": {
+        "label": "Член"
+      },
+      "name": {
+        "label": "Наименование"
+      },
+      "surname": {
+        "label": "Фамилия"
+      },
+      "username": {
+        "label": "Имя пользователя"
+      }
+    },
+    "extra-security-section": {
+      "label": "Дополнительные меры безопасности",
+      "min-tls-version": {
+        "description": "Минимальная разрешенная версия TLS. Принимаемые значения: TLS1.2, TLS1.3.",
+        "label": "Мин. версия TLS"
+      },
+      "start-tls": {
+        "description": "Если установлено значение true, используйте LDAP с STARTTLS вместо LDAPS",
+        "label": "Запустить TLS"
+      },
+      "tls-ciphers": {
+        "description": "Список шифров, разделенных запятыми или пробелами",
+        "label": "TLS шифры",
+        "placeholder": "e.g. [\"TLS_AES_256_GCM_SHA384\"]"
+      },
+      "use-ssl": {
+        "description": "Значение true, если сервер LDAP должен использовать TLS соединение (либо с STARTTLS или LDAPS)",
+        "label": "Использовать SSL",
+        "tooltip": "Полный список поддерживаемых шифров и версий TLS см. : {\n        <TextLink style={{ fontSize: 'inherit' }} href=\"https://go.dev/src/crypto/tls/cipher_suites.go\" external>\n          https://go.dev/src/crypto/tls/cipher_suites.go\n        </TextLink>}"
+      }
+    },
+    "group-mapping-section": {
+      "description": "Привязать группы LDAP к ролям Grafana org",
+      "group-search-base-dns": {
+        "description": "Разделяйте запятыми или пробелами",
+        "label": "Базовый DNS поиск группы"
+      },
+      "group-search-filter": {
+        "description": "Используется для фильтрации и идентификации групповых записей в каталоге",
+        "label": "Фильтр поиска групп"
+      },
+      "group-search-filter-user-attribute": {
+        "description": "Определяет пользователей внутри групповых записей в целях фильтрации",
+        "label": "Атрибут имени группы"
+      },
+      "label": "Сопоставление групп",
+      "skip-org-role-sync": {
+        "description": "Предотвратить синхронизацию ролей организации пользователей с вашего IdP",
+        "label": "Пропустить синхронизацию роли организации"
+      }
+    },
+    "misc-section": {
+      "allow-sign-up": {
+        "descrition": "Если не включено, только существующие пользователи Grafana могут войти в систему с помощью LDAP",
+        "label": "Разрешить регистрацию"
+      },
+      "label": "Прочие",
+      "port": {
+        "description": "Порт по умолчанию - 389 без SSL или 636 с SSL",
+        "label": "Порт"
+      },
+      "timeout": {
+        "description": "Таймаут соединения с LDAP сервером в секундах",
+        "label": "Таймаут"
+      }
+    },
+    "title": "Расширенные настройки"
+  },
+  "ldap-settings-page": {
+    "advanced-settings-section": {
+      "edit": {
+        "button": "Редактирование"
+      },
+      "subtitle": "Сопоставления, дополнительные меры безопасности и многое другое.",
+      "title": "Расширенные настройки"
+    },
+    "alert": {
+      "discard-success": "Настройки LDAP отменены",
+      "error-fetching": "Ошибка получения настроек LDAP",
+      "error-saving": "Ошибка при сохранении настроек LDAP",
+      "error-update": "Ошибка обновления настроек LDAP",
+      "error-validate-form": "Ошибка при проверке настроек LDAP",
+      "feature-flag-disabled": "Эта страница доступна только включив параметр <1>ssoSettingsLDAP</1>.",
+      "saved": "Настройки LDAP сохранены"
+    },
+    "bind-dn": {
+      "description": "Определенное имя учетной записи, используемой для привязки и аутентификации к LDAP-серверу.",
+      "label": "Bind DN",
+      "placeholder": "example: cn=admin,dc=grafana,dc=org"
+    },
+    "bind-password": {
+      "label": "Привязать пароль"
+    },
+    "buttons-section": {
+      "discard": {
+        "button": "Сбросить"
+      },
+      "save": {
+        "button": "Сохранить"
+      },
+      "save-and-enable": {
+        "button": "Сохранить и включить"
+      }
+    },
+    "documentation": "документация",
+    "host": {
+      "description": "Имя хоста или IP-адрес LDAP сервера, к которому вы хотите подключиться.",
+      "label": "Хост сервера",
+      "placeholder": "пример: 127.0.0.1"
+    },
+    "search_filter": {
+      "description": "Фильтр поиска LDAP используется для определения конкретных записей в каталоге.",
+      "label": "Поиск фильтров*",
+      "placeholder": "пример: cn=%s"
+    },
+    "search-base-dns": {
+      "description": "Массив dns для поиска через запятую; разделённый запятыми или пробелами.",
+      "label": "Поиск базового DNS *",
+      "placeholder": "example: \"dc=grafana.dc=org\""
+    },
+    "subtitle": "Интеграция с LDAP в Grafana позволяет пользователям Grafana войти с их учётными данными LDAP. Узнайте больше в нашей {documentation}.",
+    "title": "Основные настройки"
+  },
   "library-panel": {
     "add-modal": {
       "cancel": "Отмена",
@@ -941,6 +1164,10 @@
       "short-url-label": "Сократить ссылку",
       "time-range-description": "Изменить текущий относительный диапазон времени на абсолютный диапазон времени",
       "time-range-label": "Блокировать временной диапазон"
+    },
+    "share-panel": {
+      "config-description": "Создайте персонализированную ссылку, чтобы поделиться вашей панелью внутри вашей организации, со следующими настройками:",
+      "render-image": "Отображение изображения"
     }
   },
   "login": {
@@ -967,6 +1194,11 @@
     "signup": {
       "button-label": "Регистрация",
       "new-to-question": "Новичок в Grafana?"
+    }
+  },
+  "logs": {
+    "infinite-scroll": {
+      "older-logs": "Старые журналы"
     }
   },
   "migrate-to-cloud": {
@@ -1041,6 +1273,11 @@
       "link-title": "Посмотреть полное руководство по миграции",
       "title": "Позвольте нам помочь вам перейти на этот стек"
     },
+    "migrated-counts": {
+      "dashboards": "рабочие столы",
+      "datasources": "источники данных",
+      "folders": "папок"
+    },
     "migration-token": {
       "delete-button": "Удалить токен",
       "delete-modal-body": "Если вы уже использовали этот токен при самоуправляемой установке, то эта установка больше не сможет загружать контент.",
@@ -1060,6 +1297,22 @@
       "modal-title": "Токен миграции создан",
       "status": "Текущий статус: <2></2>"
     },
+    "onprem": {
+      "cancel-snapshot-error-title": "Ошибка при отмене создания снимка",
+      "create-snapshot-error-title": "Ошибка при создании снимка",
+      "disconnect-error-title": "Ошибка при отключении",
+      "error-see-server-logs": "Смотрите журналы сервера Grafana для получения более подробной информации",
+      "get-session-error-title": "Ошибка загрузки конфигурации миграции",
+      "get-snapshot-error-title": "Ошибка загрузки снимка",
+      "migration-finished-with-caveat-title": "Миграция ресурсов завершена",
+      "migration-finished-with-errors-body": "Процесс миграции завершен, но некоторые элементы не могут быть перенесены в облако. Проверьте неудавшиеся ресурсы для получения более подробной информации",
+      "migration-finished-with-warnings-body": "Миграция завершена с некоторыми предупреждениями. Проверьте отдельные ресурсы для получения более подробной информации",
+      "snapshot-error-status-body": "Произошла ошибка при создании снимка или запуске процесса миграции. Смотрите журналы сервера Grafana для получения более подробной информации",
+      "snapshot-error-status-title": "Ошибка миграции ресурсов",
+      "success-message": "Успешно перенесено {{successCount}} {{types, list}} в Облако Grafano.",
+      "success-title": "Миграция завершена!",
+      "upload-snapshot-error-title": "Ошибка при загрузке снимка"
+    },
     "pdc": {
       "body": "Распространение информации о ваших источниках данных в Интернете может вызвать проблемы безопасности. Подключение к личному источнику данных (PDC) позволяет Grafana Cloud получить доступ к существующим источникам данных через безопасный сетевой туннель.",
       "link-title": "Узнайте о PDC",
@@ -1070,13 +1323,29 @@
       "link-title": "Цены на облако Grafana",
       "title": "Сколько это стоит?"
     },
+    "public-preview": {
+      "button-text": "Оставить отзыв",
+      "message": "Нет доступных SLA. <2>Посетите наши документы</2>, чтобы узнать больше об этой функции!",
+      "title": "Миграция в Grafana Cloud находится в открытом предпросмотре"
+    },
+    "resource-details": {
+      "dismiss-button": "ОК",
+      "error-title": "Не удалось перенести ресурс:",
+      "generic-title": "Детали миграции ресурсов:",
+      "missing-message": "Сообщение не предоставлено.",
+      "resource-summary": "{{refId}} ({{typeName}})",
+      "title": "Детали переноса ресурса",
+      "warning-title": "Ресурс перенесен с предупреждением:"
+    },
     "resource-status": {
       "error-details-button": "Детали",
       "failed": "Ошибка",
       "migrated": "Загружено в облако",
       "migrating": "Загрузка...",
       "not-migrated": "Еще не загружен",
-      "unknown": "Неизвестен"
+      "unknown": "Неизвестен",
+      "warning": "Загружено с предупреждением",
+      "warning-details-button": "Детали"
     },
     "resource-table": {
       "unknown-datasource-title": "Источник данных {{datasourceUID}}",
@@ -1091,11 +1360,9 @@
     "summary": {
       "cancel-snapshot": "Отменить снимок",
       "disconnect": "Отключиться",
-      "disconnect-error-description": "Смотрите журналы сервера Grafana для получения более подробной информации",
-      "disconnect-error-title": "Произошла ошибка при отключении",
       "errored-resource-count": "Ошибки",
-      "run-migration-error-description": "Смотрите журналы сервера Grafana для получения более подробной информации",
-      "run-migration-error-title": "Произошла ошибка при миграции ваших ресурсов",
+      "page-loading": "Загрузка...",
+      "rebuild-snapshot": "Перестроить снимок",
       "snapshot-date": "Метка времени снимка",
       "snapshot-not-created": "Еще не создано",
       "start-migration": "Создать снимок",
@@ -1103,6 +1370,9 @@
       "target-stack-title": "Загрузка в",
       "total-resource-count": "Всего ресурсов",
       "upload-migration": "Загрузить снимок"
+    },
+    "support-types-disclosure": {
+      "text": "Dashboards, Folders и встроенные источники данных перенесены в ваш Grafana Cloud stack. <2>Узнайте о миграции других настроек.</2>"
     },
     "token-status": {
       "active": "Токен создан и активен",
@@ -1394,6 +1664,10 @@
       "subtitle": "Использовать сервисные аккаунты для запуска автоматических рабочих нагрузок в Grafana",
       "title": "Сервисные аккаунты"
     },
+    "shared-dashboard": {
+      "subtitle": "Управление внешне общими панелями инструментов вашей организации",
+      "title": "Общие панели инструментов"
+    },
     "sign-out": {
       "title": "Выйти"
     },
@@ -1441,6 +1715,10 @@
     }
   },
   "navigation": {
+    "item": {
+      "add-bookmark": "Добавить в закладки",
+      "remove-bookmark": "Удалить из закладок"
+    },
     "kiosk": {
       "tv-alert": "Нажмите ESC для выхода из режима киоска"
     },
@@ -1463,7 +1741,6 @@
     },
     "title": "Последние из блога"
   },
-  "No description available": "Нет описания",
   "notifications": {
     "empty-state": {
       "description": "Полученные уведомления будут отображаться здесь",
@@ -1471,6 +1748,14 @@
     },
     "starred-dashboard": "Избранный дашборд",
     "unstarred-dashboard": "Дашборд удален из избранного"
+  },
+  "oauth": {
+    "form": {
+      "server-discovery-action-button": "Введите OpenID Connect Discovery URL",
+      "server-discovery-modal-close": "Закрыть",
+      "server-discovery-modal-loading": "Загрузка...",
+      "server-discovery-modal-submit": "Отправить"
+    }
   },
   "panel": {
     "header-menu": {
@@ -1544,6 +1829,34 @@
     }
   },
   "plugins": {
+    "catalog": {
+      "update-all": {
+        "all-plugins-updated": "Все плагины обновлены!",
+        "available-header": "Доступно",
+        "button": "Обновить все",
+        "cloud-update-message": "* Плагины могут быть доступны для использования в течение нескольких минут.",
+        "error": "Ошибка обновления плагина:",
+        "header": "Следующие плагины доступны для обновления",
+        "installed-header": "Установлено",
+        "modal-confirmation": "Обновить",
+        "modal-dismiss": "Закрыть",
+        "modal-title": "Обновить плагины",
+        "name-header": "Наименование",
+        "update-header": "Обновить"
+      }
+    },
+    "details": {
+      "labels": {
+        "dependencies": "Зависимости",
+        "downloads": "Загрузки",
+        "from": "От",
+        "reportAbuse": "Сообщить о нарушении",
+        "signature": "Подпись",
+        "status": "Статус",
+        "updatedAt": "Последнее обновление: ",
+        "version": "Версии"
+      }
+    },
     "empty-state": {
       "message": "Плагины не найдены"
     }
@@ -1587,7 +1900,9 @@
       "settings-title": "Настройки"
     },
     "configuration": {
+      "display-annotations-description": "Представление заметок на этой панели",
       "display-annotations-label": "Отображать аннотации",
+      "enable-time-range-description": "Разрешить людям изменять промежуток времени",
       "enable-time-range-label": "Включить диапазон времени",
       "settings-label": "Настройки",
       "success-pause": "Ваш доступ к дашборду был приостановлен",
@@ -1602,8 +1917,7 @@
       "welcome-title": "Добро пожаловать на публичные дашборды!"
     },
     "delete-modal": {
-      "revoke-nonorphaned-body-text": "Вы уверены, что хотите отменить этот URL? Дашборд больше не будет публичный.",
-      "revoke-orphaned-body-text": "Оставшиеся публичные дашборды больше не будут публичными.",
+      "revoke-body-text": "Вы уверены, что хотите отменить этот URL? Панель управления больше не будет открыта.",
       "revoke-title": "Revoke public URL"
     },
     "email-sharing": {
@@ -1702,10 +2016,6 @@
       "revoke-button-tooltip": "Отозвать URL публичного дашборда",
       "view-button-tooltip": "Открыть публичный дашборд"
     },
-    "dashboard-title": {
-      "orphaned-title": "<0>Общедоступный дашборд</0>",
-      "orphaned-tooltip": "Связанный дашборд уже удален"
-    },
     "empty-state": {
       "message": "Вы еще не создали никаких публичных дашбордов",
       "more-info": "Создать публичный дашборд с любого существующего дашборда через окно <1>Поделиться</1>. <4>Подробнее</4>"
@@ -1716,10 +2026,12 @@
   },
   "public-dashboard-users-access-list": {
     "dashboard-modal": {
+      "external-link": "Внешняя ссылка",
       "loading-text": "Загрузка...",
       "open-dashboard-list-text": "Открыть список дашбордов",
       "public-dashboard-link": "URL публичного дашборда",
-      "public-dashboard-setting": "Настройки публичного дашборда"
+      "public-dashboard-setting": "Настройки публичного дашборда",
+      "sharing-setting": "Настройки общего доступа"
     },
     "delete-user-modal": {
       "delete-user-button-text": "Удалить пользователя",
@@ -1729,8 +2041,12 @@
       "revoke-user-access-modal-desc-line1": "Вы уверены, что хотите отозвать доступ для {{email}}?",
       "revoke-user-access-modal-desc-line2": "Это действие немедленно отменит {{email}}&apos;S доступ ко всем публичным дашбордам."
     },
+    "delete-user-shared-dashboards-modal": {
+      "revoke-user-access-modal-desc-line2": "Это действие немедленно отменит {{email}}&apos;S доступ ко всем общим панелям."
+    },
     "modal": {
-      "dashboard-modal-title": "Публичные дашборды"
+      "dashboard-modal-title": "Публичные дашборды",
+      "shared-dashboard-modal-title": "Общие панели инструментов"
     },
     "table-header": {
       "activated-label": "Активирован",
@@ -1753,6 +2069,7 @@
       "expand-row": "Развернуть строку запросов",
       "hide-response": "Скрыть ответ",
       "remove-query": "Удалить запрос",
+      "save-to-query-library": "Сохранить в библиотеку запросов",
       "show-response": "Показать ответ",
       "toggle-edit-mode": "Переключить режим редактирования текста"
     },
@@ -1777,6 +2094,8 @@
       "title": "Окончательно удалить дашборды"
     },
     "restore-modal": {
+      "folder-picker-text_one": "Пожалуйста, выберите папку, где ваша панель управления будет восстановлена.",
+      "folder-picker-text_other": "Пожалуйста, выберите папку, где ваши панели управления будут восстановлены.",
       "restore-button": "Восстановить",
       "restore-loading": "Восстановить...",
       "text_one": "Это действие восстановит {{numberOfDashboards}} дашборд.",
@@ -1817,8 +2136,30 @@
     },
     "dismissable-button": "Закрыть"
   },
+  "save-dashboards": {
+    "name-exists": {
+      "message-info": "Панель инструментов с таким же именем в выбранной папке уже существует, включая недавно удаленные рабочие столы.",
+      "message-suggestion": "Пожалуйста, выберите другое имя или папку.",
+      "title": "Название панели уже существует"
+    }
+  },
   "scopes": {
-    "filters": {
+    "dashboards": {
+      "collapse": "Свернуть",
+      "expand": "Развернуть",
+      "loading": "Загрузка панелей инструментов",
+      "noResultsForFilter": "По вашему запросу ничего не найдено",
+      "noResultsForFilterClear": "Очистить поиск",
+      "noResultsForScopes": "Для выбранных областей не найдены панели инструментов",
+      "noResultsNoScopes": "Области не выбраны",
+      "search": "Искать",
+      "toggle": {
+        "collapse": "Свернуть список предлагаемых панелей инструментов",
+        "disabled": "Рекомендуемый список панелей инструментов отключён из-за режима только для чтения",
+        "expand": "Развернуть предложенный список панелей инструментов"
+      }
+    },
+    "selector": {
       "apply": "Применить",
       "cancel": "Отмена",
       "input": {
@@ -1826,18 +2167,6 @@
         "removeAll": "Удалить все области действия"
       },
       "title": "Выберите области действия"
-    },
-    "suggestedDashboards": {
-      "loading": "Загрузка дашбордов",
-      "noResultsForFilter": "По вашему запросу ничего не найдено",
-      "noResultsForFilterClear": "Очистить поиск",
-      "noResultsForScopes": "Для выбранных областей не найдены дашборды",
-      "noResultsNoScopes": "Области не выбраны",
-      "search": "Искать",
-      "toggle": {
-        "collapse": "Свернуть рамочные фильтры",
-        "expand": "Развернуть охват фильтров"
-      }
     },
     "tree": {
       "collapse": "Свернуть",
@@ -1902,7 +2231,8 @@
   },
   "share-drawer": {
     "confirm-action": {
-      "back-arrow-button": "Кнопка \"Назад\""
+      "back-arrow-button": "Кнопка \"Назад\"",
+      "cancel-button": "Отмена"
     }
   },
   "share-modal": {
@@ -1914,8 +2244,7 @@
       "html": "Вставить HTML",
       "html-description": "Нижеприведенный HTML код может быть вставлен и включен в другую веб-страницу. Если не включен анонимный доступ, пользователь должен войти в Grafana для загрузки графа.",
       "info": "Генерировать HTML для встраивания iframe с этой панелью.",
-      "time-range": "Текущий интервал времени",
-      "time-range-description": "Преобразует текущий относительный диапазон времени в абсолютный интервал"
+      "time-range": "Период блокировки"
     },
     "export": {
       "back-button": "Вернуться к настройке экспорта",
@@ -1983,6 +2312,23 @@
       "copy-button": "Скопировать в буфер обмена"
     }
   },
+  "share-panel": {
+    "drawer": {
+      "new-library-panel-title": "Новая панель библиотеки",
+      "share-embed-title": "Поделиться вставкой",
+      "share-link-title": "Настройки ссылки"
+    },
+    "menu": {
+      "new-library-panel-title": "Новая панель библиотеки",
+      "share-embed-title": "Поделиться вставкой",
+      "share-link-title": "Поделиться ссылкой",
+      "share-snapshot-title": "Поделиться снимком"
+    },
+    "new-library-panel": {
+      "cancel-button": "Отмена",
+      "create-button": "Создать панель библиотеки"
+    }
+  },
   "share-playlist": {
     "checkbox-description": "Высота панели будет регулироваться по размеру экрана",
     "checkbox-label": "Автоподбор",
@@ -2004,8 +2350,27 @@
     }
   },
   "shared-dashboard": {
+    "delete-modal": {
+      "revoke-body-text": "Вы уверены, что хотите отменить этот доступ? Панель управления больше не может быть предоставлена.",
+      "revoke-title": "Отозвать доступ"
+    },
     "fields": {
       "timezone-label": "Часовой пояс"
+    }
+  },
+  "shared-dashboard-list": {
+    "button": {
+      "config-button-tooltip": "Настроить общую панель управления",
+      "revoke-button-text": "Отозвать доступ",
+      "revoke-button-tooltip": "Отозвать доступ",
+      "view-button-tooltip": "Просмотр общей панели инструментов"
+    },
+    "empty-state": {
+      "message": "Вы еще не создали никаких общих панелей инструментов",
+      "more-info": "Создайте общую панель управления с любой существующей панели с помощью <1>Поделиться</1> модальной. <4>Подробнее</4>"
+    },
+    "toggle": {
+      "pause-sharing-toggle-text": "Приостановить доступ"
     }
   },
   "shared-preferences": {
@@ -2061,11 +2426,14 @@
       "info-alert": "Снимок дашборда Grafana публично делится дашбордом при удалении таких важных данных, как запросы и ссылки на панели, оставляя только видимые метрики и имена серий. Любой пользователь со ссылкой может получить доступ к снимку.",
       "learn-more-button": "Узнать больше",
       "local-button": "Опубликовать снимок",
-      "name-label": "Имя снимка*",
+      "name-label": "Имя снимка",
       "new-snapshot-button": "Новый снимок",
       "success-creation": "Снимок создан",
       "success-delete": "Ваш снимок был удален",
       "view-all-button": "Посмотреть все снимки"
+    },
+    "share-panel": {
+      "info-alert": "Снимок панели Grafana публично делится панелью при удалении таких важных данных, как запросы и ссылки на панели, оставляя только видимые метрики и имена серий. Любой пользователь со ссылкой может получить доступ к снимку."
     },
     "url-column-header": "Snapshot url",
     "view-button": "Вид"
@@ -2143,15 +2511,22 @@
       "select-search-input": "Введите для поиска (страна, город, сокращение)"
     }
   },
+  "trails": {
+    "metric-overview": {
+      "description-label": "Описание",
+      "labels-label": "Метки",
+      "no-description": "Нет описания",
+      "type-label": "Тип",
+      "unit-label": "Единица измерения",
+      "unknown-type": "Неизвестен"
+    }
+  },
   "transformations": {
     "empty": {
       "add-transformation-body": "Трансформации позволяют изменять данные различными способами, прежде чем будет показана визуализация. 1></1>Сюда входит объединение данных, переименование полей, расчеты, форматирование данных для отображения и многое другое.",
       "add-transformation-header": "Начать преобразование данных"
     }
   },
-  "Type": "Тип",
-  "Unit": "Единица измерения",
-  "Unknown": "Неизвестен",
   "user-orgs": {
     "current-org-button": "Текущее",
     "name-column": "Название",
@@ -2188,7 +2563,8 @@
   },
   "users-access-list": {
     "tabs": {
-      "public-dashboard-users-tab-title": "Пользователи публичного дашборда"
+      "public-dashboard-users-tab-title": "Пользователи публичного дашборда",
+      "shared-dashboard-users-tab-title": "Общие пользователи панели инструментов"
     }
   },
   "variable": {
